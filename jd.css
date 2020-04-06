@@ -1,0 +1,107 @@
+@import "common.css";
+@import "search_menu.css";
+@import "main.css";
+div.top_menu {
+  background-color: #E3E4E5;
+  color: #999;
+}
+div.top_menu div.container {
+  height: 30px;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+div.top_menu div.container div.city {
+  display: flex;
+  align-content: stretch;
+  align-items: center;
+}
+div.top_menu div.container div.city div.cities div span {
+  display: block;
+  padding: 5px 18px;
+  color: #999;
+}
+div.top_menu div.container div.city div.cities div.line {
+  height: 1px;
+  width: 100%;
+  background-color: #999;
+}
+div.top_menu div.container div.city div.cities ul {
+  width: 322px;
+  display: flex;
+  flex-wrap: wrap;
+}
+div.top_menu div.container div.city div.cities ul li {
+  margin: 10px 0px;
+  width: 20%;
+  text-align: center;
+  box-sizing: border-box;
+}
+div.top_menu div.container div.city div.cities ul li a {
+  color: #999;
+}
+div.top_menu div.container div.city div.cities ul li:hover a {
+  cursor: pointer;
+  padding: 5px 8px;
+  background: #ddd;
+  color: #999;
+}
+div.top_menu div.container div.city div.cities ul .position:hover a {
+  cursor: pointer;
+  padding: 5px 8px;
+  background: #F10215;
+  color: white;
+}
+div.top_menu div.container div.city div.cities ul .position a {
+  background: #F10215;
+  padding: 5px 8px;
+  color: white;
+}
+div.top_menu div.container div.city div.cities .site li {
+  width: 50%;
+  text-align: initial;
+  padding: 5px 18px;
+}
+div.top_menu div.container i {
+  color: #F10215;
+}
+div.top_menu div.container ul.right_menu {
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+div.top_menu div.container ul.right_menu li.red:hover a {
+  color: #F10215 !important;
+}
+div.top_menu div.container ul.right_menu li {
+  display: flex;
+  justify-content: center;
+  align-self: stretch;
+  align-items: center;
+}
+div.top_menu div.container ul.right_menu li:first-child {
+  margin-right: -15px;
+}
+div.top_menu div.container ul.right_menu li a {
+  display: flex;
+  padding: 0 8px;
+  align-items: center;
+}
+div.top_menu div.container ul.right_menu li.line {
+  width: 1px;
+  height: 8px;
+  background-color: #999;
+  align-self: center ;
+}
+div.top_menu div.container ul.right_menu i.down {
+  font-size: 3px;
+  color: #999;
+}
+div.top_menu div.container ul.right_menu a {
+  color: #999;
+}
+div.top_menu div.container ul.right_menu a.red {
+  color: #F10215;
+}

@@ -1,0 +1,449 @@
+main {
+  background-color: #F4F4F4;
+}
+main article {
+  padding-top: 10px;
+  position: relative;
+  display: flex;
+}
+main article div.menu {
+  width: 200px;
+  height: 470px;
+  background-color: white;
+}
+main article div.menu ul.menu {
+  padding: 15px 0 15px 0;
+}
+main article div.menu ul.menu li.menu_list {
+  padding: 2.5px 0 2.5px 15px;
+}
+main article div.menu ul.menu li.menu_list a {
+  color: #555;
+  font-size: 14px;
+}
+main article div.menu ul.menu li.menu_list div.childen {
+  position: absolute;
+  top: 10px;
+  left: 203px;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  padding: 20px;
+  z-index: 10;
+  display: none;
+}
+main article div.menu ul.menu li.menu_list div.childen ul:first-child {
+  display: flex;
+}
+main article div.menu ul.menu li.menu_list div.childen ul:first-child li {
+  margin-right: 10px;
+  background-color: #555;
+  display: flex;
+  justify-content: center;
+}
+main article div.menu ul.menu li.menu_list div.childen ul:first-child li a {
+  color: white;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+main article div.menu ul.menu li.menu_list div.childen ul:first-child li:first-child {
+  width: 80px;
+  display: flex;
+  justify-content: center;
+}
+main article div.menu ul.menu li.menu_list div.childen ul:first-child li:first-child a {
+  flex-grow: 1;
+  text-align: center;
+}
+main article div.menu ul.menu li.menu_list div.childen dl {
+  display: flex;
+  align-self: start;
+  width: 800px;
+  margin-top: 10px;
+}
+main article div.menu ul.menu li.menu_list div.childen dl dt {
+  text-align: right;
+  margin-right: 15px;
+  color: #333;
+}
+main article div.menu ul.menu li.menu_list div.childen dl dt a {
+  display: block;
+  font-size: 12px;
+  width: 80px ;
+  margin-top: 10px;
+}
+main article div.menu ul.menu li.menu_list div.childen dl dd {
+  display: flex;
+  flex-wrap: wrap;
+}
+main article div.menu ul.menu li.menu_list div.childen dl dd a {
+  display: block;
+  margin-right: 15px;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #777;
+}
+main article div.menu ul.menu li.menu_list div.childen ul.two {
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+main article div.menu ul.menu li.menu_list div.childen ul.two li {
+  margin-top: 5px;
+}
+main article div.menu ul.menu li.menu_list div.childen ul.two div {
+  width: 80px;
+  margin-right: 15px;
+}
+main article div.menu ul.menu li.menu_list div.childen ul.two div li.left_title {
+  display: flex;
+  justify-content: flex-end;
+}
+main article div.menu ul.menu li.menu_list div.childen ul.two div a {
+  font-size: 12px;
+}
+main article div.menu ul.menu li.menu_list div.childen ul.two div.two {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+}
+main article div.menu ul.menu li.menu_list div.childen ul.two div.two li {
+  margin-right: 10px;
+}
+main article div.menu ul.menu li.menu_list div.childen ul.two div.two li a {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main article div.menu ul.menu li.menu_list div.childen div.picture {
+  height: 100px;
+  width: 100px;
+  background-color: blueviolet;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+main article div.menu ul.menu li.menu_list:hover {
+  background-color: #ddd;
+}
+main article div.menu ul.menu li.menu_list:hover div.childen {
+  display: block;
+}
+main article div.slide {
+  margin-left: 10px;
+  width: 600px;
+  height: 470px;
+}
+main article div.slide img {
+  width: 100%;
+  height: 100%;
+}
+main article div.ads {
+  margin-left: 10px;
+  width: 200px;
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main article div.ads div {
+  overflow: hidden;
+  height: 32%;
+}
+main article div.ads div img {
+  width: 100%;
+}
+@media screen and (max-width: 1100px) {
+  main article div.ads {
+    display: none;
+  }
+}
+main article div.account {
+  overflow: hidden;
+  margin-left: 10px;
+  width: 200px;
+  height: 470px;
+  background-color: white;
+  padding: 15px;
+  box-sizing: border-box;
+}
+main article div.account div.user {
+  display: flex;
+  align-items: center;
+}
+main article div.account div.user div.touxiang {
+  background-color: blueviolet;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-shadow: 0 0 10px rgba(100, 100, 100, 0.5);
+}
+main article div.account div.user section div {
+  margin-left: 15px;
+}
+main article div.account div.user section div span {
+  color: #888;
+  font-size: 12px;
+}
+main article div.account div.user section div span:hover {
+  color: #F10215;
+}
+main article div.account div.user section div a {
+  color: #888;
+  font-size: 12px;
+}
+main article div.account div.user section div a:hover {
+  color: #F10215;
+}
+main article div.account section.btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+main article div.account section.btn div.btn {
+  height: 30px;
+  width: 75px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main article div.account section.btn div.btn a {
+  font-size: 12px;
+}
+main article div.account section.btn .red {
+  background-color: #F10215;
+}
+main article div.account section.btn .red a {
+  color: white;
+}
+main article div.account section.btn .black {
+  background-color: #333;
+}
+main article div.account section.btn .black:hover {
+  background-color: #F10215;
+}
+main article div.account section.btn .black:hover a {
+  color: white;
+}
+main article div.account section.btn .black a {
+  color: #C6BA7F;
+}
+main article div.account div.user_line {
+  height: 1px;
+  background: linear-gradient(to right, white, #ddd, white);
+  width: 100%;
+  margin: 10px 0;
+  opacity: 0.8;
+}
+main article div.account section.jdkuaibao div.kuaibao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main article div.account section.jdkuaibao div.kuaibao span:first-child {
+  font-size: 14px;
+  font-weight: 600;
+}
+main article div.account section.jdkuaibao div.kuaibao span:last-child {
+  font-size: 10px;
+  color: #999;
+}
+main article div.account section.jdkuaibao div.kuaibao span:last-child:hover {
+  color: #F10215;
+}
+main article div.account section.jdkuaibao div.kuaibao span:last-child i {
+  font-size: 5px;
+  margin-left: 5px;
+}
+main article div.account section.jdkuaibao ul li {
+  display: flex;
+  margin: 5px 0;
+}
+main article div.account section.jdkuaibao ul li a {
+  color: #999;
+}
+main article div.account section.jdkuaibao ul li:hover a {
+  color: #F10215;
+}
+main article div.account section.jdkuaibao ul li div.title {
+  background-color: #FDEEED;
+  color: #EC7771;
+  padding: 2px 2px;
+  font-size: 12px;
+}
+main article div.account section.jdkuaibao ul li div.text {
+  padding: 2px  0 2px 5px;
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+main article div.account section.icon {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+main article div.account section.icon ul {
+  padding: 5px;
+}
+main article div.account section.icon ul li {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main article div.account section.icon ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main article div.account section.icon ul li a i.icon {
+  font-size: 20px;
+  color: #999;
+}
+main article div.account section.icon ul li a span {
+  font-size: 12px;
+  margin-top: 2px;
+  color: #999;
+}
+main article div.account section.icon ul li div.quickmenu {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  position: absolute;
+  background-color: #ffffff;
+  top: 220px;
+  width: 100%;
+  height: 200px;
+  z-index: 100;
+  transition: 0.5s;
+}
+main article div.account section.icon ul li:first-child {
+  transition: 0.5s;
+}
+main article div.account section.icon ul li:first-child:hover {
+  transform: translateY(-30px);
+}
+main article div.account section.icon ul li:first-child:hover .quickmenu {
+  transform: translateY(-180px);
+}
+main section.jingdongmiaosha {
+  margin-top: 30px;
+  display: flex;
+}
+main section.jingdongmiaosha div.jingdongmiaosha {
+  height: 260px;
+  width: 195px;
+  background-color: #F10215;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  padding: 20px 10px 20px 10px;
+  box-sizing: border-box;
+}
+main section.jingdongmiaosha div.ads_pic {
+  padding: 10px 0px 10px 0;
+  background-color: white;
+}
+main section.jingdongmiaosha div.ads_pic ul {
+  display: flex;
+  height: 100%;
+}
+main section.jingdongmiaosha div.ads_pic ul div.line {
+  height: 100%;
+  width: 1px;
+  background: linear-gradient(to bottom, white, #999, white);
+}
+main section.jingdongmiaosha div.ads_pic ul li {
+  width: 205px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section.jingdongmiaosha div.ads_pic ul li:hover div.text a {
+  color: #F10215;
+}
+main section.jingdongmiaosha div.ads_pic ul li img {
+  width: 80%;
+}
+main section.jingdongmiaosha div.ads_pic ul li div.text {
+  width: 160px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+main section.jingdongmiaosha div.ads_pic ul li div.text a {
+  font-size: 12px;
+  color: #555;
+}
+main section.jingdongmiaosha div.ads_pic ul li div.price {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 90%;
+  border: solid 1px #F10215;
+  border-left: none;
+  box-sizing: border-box;
+}
+main section.jingdongmiaosha div.ads_pic ul li div.price div::after {
+  content: "";
+  background-color: #F10215;
+  transform: skewX(-30deg);
+  display: block;
+  width: 120px;
+  height: 200%;
+  position: absolute;
+  top: -10px;
+  left: -35px;
+  z-index: 0;
+}
+main section.jingdongmiaosha div.ads_pic ul li div.price div span {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+main section.jingdongmiaosha div.ads_pic ul li div.price div span:last-child {
+  font-size: 20px;
+  margin-left: -5px;
+}
+main section.jingdongmiaosha div.ads_pic ul li div.price del {
+  font-size: 14px;
+  color: #aaa;
+}
+@media screen and (max-width: 1100px) {
+  main section.jingdongmiaosha div.ads_pic ul li.last {
+    display: none;
+  }
+  main section.jingdongmiaosha div.ads_pic ul li.last div.last_pic {
+    width: 205px;
+  }
+}
+main section.jingdongmiaosha div.ads_pic ul div.last_pic {
+  width: 210px;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section.jingdongmiaosha div.ads_pic ul div.last_pic img {
+  width: 80%;
+  position: relative;
+}
+main section.jingdongmiaosha div.ads_pic ul div.last_pic div.bac {
+  background: linear-gradient(180deg, white, #eee);
+  position: relative;
+  width: 100%;
+  height: 80px;
+}

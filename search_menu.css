@@ -1,0 +1,139 @@
+div.search_menu {
+  background-color: #fff;
+}
+div.search_menu div.container {
+  height: 140px;
+  position: relative;
+}
+div.search_menu div.pic {
+  width: 190px;
+  height: 120px;
+  background-image: url(1.png);
+  position: absolute;
+  left: 0;
+}
+div.search_menu div.pic_r {
+  width: 190px;
+  height: 120px;
+  background-image: url(2.png.webp);
+  position: absolute;
+  right: 0;
+}
+div.search_menu div.search {
+  position: absolute;
+  display: flex;
+  left: 300px;
+  top: 30px;
+}
+div.search_menu div.search div.search_kuang {
+  padding: 5px 10px;
+  width: 480px;
+  border: solid 3px red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  color: #999;
+  font-size: 10px;
+}
+div.search_menu div.search div.find {
+  padding: 5px 20px;
+  background-color: red;
+  color: white;
+  font-weight: 600;
+}
+div.search_menu div.fenlei {
+  position: absolute;
+  left: 300px;
+  top: 70px;
+}
+div.search_menu div.fenlei ul {
+  display: flex;
+}
+div.search_menu div.fenlei ul li {
+  margin-right: 10px;
+  font-size: 12px;
+  color: #777;
+  cursor: pointer;
+}
+div.search_menu div.fenlei ul li:hover {
+  color: #F10215;
+}
+div.search_menu div.dalei {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 110px;
+}
+div.search_menu div.dalei ul {
+  display: flex;
+  justify-content: space-around;
+  width: 780px ;
+}
+div.search_menu div.dalei ul li {
+  display: inline-block;
+  font-size: 16px;
+  color: #777;
+}
+div.search_menu div.dalei ul li:hover {
+  color: #F10215;
+}
+div.search_menu div.dalei ul li:nth-child(1),
+div.search_menu div.dalei ul li:nth-child(2) {
+  font-weight: 600;
+  color: #F10215;
+}
+div.search_menu div.gouwuche {
+  position: absolute;
+  left: 860px;
+  top: 30px;
+}
+div.search_menu div.gouwuche div.gouwuche_title {
+  border: solid 1px #999;
+  height: 33.6px;
+  width: 120px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 100;
+  background-color: white;
+}
+div.search_menu div.gouwuche a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  margin: 0 5px;
+  color: #999;
+  font-size: 10px;
+}
+div.search_menu div.gouwuche a i::after {
+  content: "0";
+  background-color: #F10215;
+  color: white;
+  font-size: 8px;
+  width: 20px;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  top: -10px;
+  left: -5px;
+}
+div.search_menu div.gouwuche div.gouwuche_content {
+  width: 200px;
+  height: 40px;
+  border: solid 1px #F10215;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  top: 33px;
+  display: none;
+}
+div.search_menu div.gouwuche:hover div.gouwuche_title {
+  border: solid 1px #F10215;
+  border-bottom: none;
+}
+div.search_menu div.gouwuche:hover div.gouwuche_content {
+  display: block;
+  z-index: 20;
+}

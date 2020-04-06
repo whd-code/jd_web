@@ -1,0 +1,527 @@
+main {
+    background-color: #F4F4F4;
+    article {
+        padding-top: 10px; 
+        position: relative;
+        display: flex;
+        div.menu {
+            width: 200px;
+            height: 470px;
+            background-color: white;
+           
+            ul.menu {
+                padding: 15px 0 15px 0;
+                li.menu_list {
+                    padding: 2.5px 0 2.5px 15px;
+                        a{
+                            color: #555;
+                            font-size: 14px;
+                        }
+                        div.childen {
+                                position: absolute;
+                                top: 10px;
+                                left: 203px;
+                                right: 0;
+                                bottom: 0;
+                                background-color: white;
+                                padding: 20px;
+                                z-index: 10;
+                                
+                                    ul:first-child {
+                                        display: flex;
+                                        li {
+                                            margin-right: 10px;
+                                            background-color: #555;
+                                            display: flex;
+                                            justify-content: center;
+                                            a {
+                                                color: white;
+                                                font-size: 14px;
+                                                padding: 5px 10px;
+                                            }
+                                        }
+                                        li:first-child {
+                                            width: 80px;
+                                            display: flex;
+                                            justify-content: center;
+                                            a {
+                                                flex-grow: 1;
+                                                text-align: center;
+                                            }
+                                        }
+                                    }
+
+                                      // 使用dl进行对齐
+                                      dl {
+                                        display: flex;
+                                        align-self: start;
+                                        width: 800px;
+                                        margin-top: 10px;
+                                       
+                                        dt {
+ 
+                                                a {
+                                                    display: block;
+                                                    font-size: 12px;
+                                                    width: 80px ;
+                                                    margin-top: 10px
+                                                }
+                                            
+                                            text-align: right;
+                                            // border: solid 1px black;
+                                            margin-right: 15px;
+                                            color: #333;
+                                           
+                                        }
+                                        dd {
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                            
+                                           a {
+                                               display: block;
+                                               margin-right: 15px;
+                                                margin-top: 10px;  
+                                               font-size: 12px;
+                                               color: #777;
+                                           }
+                                        }
+                                    }
+
+                                    //使用ul进行分组设置，然后对齐
+                                    ul.two {
+                                        margin-top: 10px;
+                                        display: flex;
+                                        align-items: flex-start;
+                                        li {
+                                            margin-top: 5px;
+                                        }
+                                        div {
+                                            width: 80px;
+                                            margin-right: 15px;
+                                            li.left_title {
+                                                display: flex;
+                                                justify-content: flex-end
+                                                ;
+                                            }
+                                            a {
+
+                                                font-size: 12px;
+                                            }
+                                        }
+                                        div.two {
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                            width: 600px;
+                                            //  border: solid 1px black;
+                                                li {
+                                                margin-right: 10px;  
+                                                
+                                            
+                                                a {
+                                                    font-size: 12px;
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    
+                                                } 
+                                            }
+                                        }
+                                       
+                                      
+                                  
+                                    }
+
+
+                                    div.picture {
+                                        height: 100px;
+                                        width: 100px;
+                                        background-color: blueviolet;
+                                        position: absolute;
+                                        right: 20px;
+                                        top: 20px;
+                                    }
+                                
+
+                            display: none;
+                        }
+
+
+                        &:hover {
+                            & {
+                                background-color: #ddd;
+                            }
+                            div.childen {
+                                display: block;
+                            }
+                        }
+
+                }
+            }
+        }
+        div.slide {
+            margin-left: 10px;
+            width: 600px;
+            height: 470px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        div.ads {
+            margin-left: 10px;
+            width: 200px;
+            height: 470px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            div {
+                overflow: hidden;
+                height: 32%;
+                img {
+                    width: 100%;
+                }
+            }
+            @media screen and (max-width:1100px) {
+                display: none;
+            }
+            
+        }
+        div.account {
+            overflow: hidden;
+            margin-left: 10px;
+            width: 200px;
+            height: 470px;
+            background-color: white;
+            padding: 15px;
+            box-sizing: border-box;
+            div.user {
+                display: flex;
+                align-items: center;
+                
+                div.touxiang {
+                    background-color: blueviolet;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    box-shadow: 0 0 10px rgba(100, 100, 100, 0.5);
+                }
+                section div {
+                   margin-left: 15px;
+                    span {
+                        color: #888;
+                        font-size: 12px;
+                        &:hover {
+                            color: #F10215;
+                        }
+                    }
+                    a {
+                        color: #888;
+                        font-size: 12px;
+                        &:hover {
+                            color: #F10215;
+                        }
+                    }
+                }
+                
+            }
+            section.btn {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 10px;
+                div.btn {
+                    // border: solid 1px black;
+                    height: 30px;
+                    width: 75px;
+                    border-radius: 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    a {
+                        font-size: 12px;
+                      
+                    }
+                } 
+                .red {
+                    background-color: #F10215;
+                    a {
+                        color: white;
+                    }
+                }  
+                .black {
+                    background-color: #333;
+                    &:hover {
+                        background-color: #F10215;
+                        a {
+                            color: white;
+                        }
+                    }
+                    a {
+                        color: #C6BA7F;
+                    }
+                }
+            }
+            div.user_line {
+                height: 1px;
+                background:linear-gradient(to right,white,#ddd,white) ;
+                width: 100%;
+                margin: 10px 0;
+                opacity: 0.8;
+            }
+            section.jdkuaibao {
+                // background-color: black;
+                div.kuaibao {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center; 
+                   
+                    span:first-child {
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                    span:last-child {
+                        font-size: 10px;
+                        color: #999;
+                        &:hover {
+                            color: #F10215;
+                        }
+                      
+                        i {
+                            font-size: 5px;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+                ul li {
+                    display: flex;
+                   margin: 5px 0;
+                   a {
+                       color: #999;
+                   }
+                   &:hover {
+                            a {
+                                color: #F10215;
+                            }
+                        }
+                    div.title {
+                        background-color:#FDEEED;
+                        color: #EC7771;
+                        padding: 2px 2px;
+                        font-size: 12px;
+                        
+                    }
+                    div.text {
+                        padding: 2px  0 2px 5px;
+                        font-size: 12px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                       
+                    }
+                }
+
+            }
+            section.icon {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+                // height: 100%;
+                // background-color: #ddd;
+                ul {
+                    padding: 5px;
+                    li {
+                        
+                        margin-bottom: 10px;
+                        // border: solid 1px black;
+                        display: flex;
+                        
+                        justify-content: space-between;
+                        align-items: center;
+                        a {
+                            display: flex;
+                            
+                            flex-direction: column;
+                            
+                            align-items: center;
+                                i.icon {
+                                    font-size: 20px;
+                                    color: #999;
+                                }
+                                span {
+                                    font-size: 12px;
+                                    margin-top: 2px;
+                                    color: #999;
+                                }
+                        }
+                        div.quickmenu {
+                            display: flex;
+                            justify-content: center;
+                            padding-top: 20px;
+                            position: absolute;
+                            background-color: #ffffff;
+                            top:220px;
+                            
+                            width: 100%;
+                            height: 200px;
+                            z-index: 100;
+                            transition: 0.5s;
+                        }
+                        &:first-child {
+                            transition: 0.5s;
+                        }
+                        &:first-child:hover {
+                            transform: translateY(-30px);
+                            .quickmenu {
+                                transform: translateY(-180px);
+                              }
+                        }
+                       
+                    }
+                }
+                
+              
+                        
+                 
+               
+               
+            }
+        }
+       
+    }
+    section.jingdongmiaosha {
+        margin-top: 30px;
+        display: flex;
+        div.jingdongmiaosha {
+            height: 260px;
+            width: 195px;
+            background-color: #F10215;
+            color: white;
+            font-size: 25px;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            padding: 20px 10px 20px 10px;
+            box-sizing: border-box;
+        }
+        div.ads_pic {
+            // margin-left: 10px;
+            padding: 10px 0px 10px 0;
+            background-color: white;
+            ul {
+                 display: flex;
+                 height: 100%;
+                div.line {
+                    height:100%;
+                    width: 1px;
+                    background: linear-gradient(to bottom,white,#999,white);
+                }
+                li {
+                    width: 205px;
+                    display: flex;
+                    flex-direction: column;
+                   
+                    align-items: center;
+                    &:hover {
+                        div.text {
+                             a {
+                                 color: #F10215;
+                             }
+                        }
+                       
+                    }
+                    img {
+                        width: 80%;
+                    }
+                    div.text {
+                        width: 160px;
+                        
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                      
+                        a {
+                            font-size: 12px;
+                            color: #555;
+                        }
+                    
+                    }
+                    div.price {
+                        margin-top: 25px;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        position: relative;
+                        overflow: hidden;
+                        width: 90%;
+                        border: solid 1px #F10215;
+                        border-left: none;
+                        box-sizing: border-box;
+                        div {
+                            
+                            &::after {
+                                content: "";
+                                background-color: #F10215;
+                                transform: skewX(-30deg);
+                                display: block;
+                                width: 120px;
+                                height: 200%;
+                                position: absolute;
+                                top: -10px;
+                                left: -35px;
+                                z-index: 0;
+                            }
+                            span {
+                                position: relative;
+                                z-index: 1;
+                                color: white;
+                                &:last-child {
+                                    font-size: 20px;
+                                    margin-left: -5px;
+                                }
+                            }
+                        }
+                        del {
+                            font-size: 14px;
+                            color: #aaa;
+                        }
+                       
+                    }
+                 
+                   
+                }
+                   li.last {
+                          @media screen and (max-width:1100px) {
+                             display: none;
+                             div.last_pic {
+                                width: 205px;
+                             }
+                          }
+                    }
+                div.last_pic {
+                    width: 210px;
+                    height: 100%;
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                   
+                    img {
+                        width: 80%;
+                        position: relative;
+                       
+                    }
+                    div.bac {
+                        background:linear-gradient(180deg,white,#eee);
+                        position: relative;
+                        width: 100%;
+                        height: 80px;
+                    }
+                }
+            }
+            
+        }
+    }
+}
